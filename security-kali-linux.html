@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en"> 
+
+ <head> 
+    <link rel="shortcut icon" href="C:\Users\USER WORLD\Downloads\favicon (7).ico">
+
+  <meta charset="UTF-8"> 
+
+  <title>Security Lock - Kali Linux</title> 
+
+  <link rel="stylesheet" href="./style-kali.css"> 
+
+ </head> 
+
+ <body> <!-- partial:index.partial.html --> 
+
+  <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+
+   <div class="signin"> 
+
+    <div class="content"> 
+
+     <h2>Security Lock</h2> 
+
+     <div class="form"> 
+
+      <div class="inputBox"> 
+
+       <input id="usn" type="text" required> <i>Username</i> 
+
+      </div> 
+
+      <div class="inputBox"> 
+
+       <input id="pswd" type="password" required> <i>Passcode</i> 
+
+      </div> 
+
+      <div class="links"> <a href="email_sent.html">Forgot Passcode</a> 
+
+      </div> 
+
+      <div class="inputBox"> 
+        
+       <input type="submit" value="Unlock Linux" onclick="checkPswd();" /> 
+       <script type="text/javascript">
+        function disableRightClick(event) {
+            if (event.button == 2) {
+                event.preventDefault();
+                return false;
+            }
+        }
+        function checkPswd() {
+            var nullVaue = "";
+            var confirmPassword = "verified";
+            var password = document.getElementById("pswd").value;
+            var confirmUsername = "user_system";
+            var username = document.getElementById("usn").value;
+            if (username == confirmUsername) {
+                if (password == confirmPassword) {
+                    window.location="prompt.html"; }
+                else if(password == nullVaue) {
+                    alert("Password cannot be blank.")
+                }
+                else{
+                    alert("Passwords does not match. Please re-enter password.");
+                }
+            }
+            else if(username == nullVaue){
+                alert("Username cannot be blank.")
+            }
+            else{
+                alert("Username does not match. Please enter a valid username.")
+            }
+        }
+        function windowClose() {
+            window.open('','parent','');
+            window.close();
+        }
+        </script>
+       
+      </div> 
+
+     </div> 
+
+    </div> 
+
+   </div> 
+
+  </section> <!-- partial --> 
+
+ </body>
+
+</html>
